@@ -28,3 +28,21 @@ GETRANGE key start end 获取指定字符串下标的所有值。
  RPOP key 移除列表中最后一个元素。
  LRAGE key start end : 获取列表中指定范围的元素。从最右边算起，
  
+ # Set 集合
+ 
+ Set 是无序的，集合成员是唯一的。意味着集合中不能出现重复的数据。
+ 
+ 常用的命令： SADD、SCARD、SNENVERS、SPOP
+ 
+ SADD key member1 member2 向集合中添加一个或多个成员
+ SCARD key : 获取集合的成员数.
+ SMEMBERS key : 获取集合中所有成员。
+ SPOP key ：随机移除集合中的一个元素并返回。
+ 
+ Sorted Set 有序集合
+ 自动排序
+ 常用命令：ZADD、ZRANGE、ZREM和ZCARD.
+ ZADD key score1 member1 添加一个或多个成员
+ ZRANGE key start stop 获取有序集合指定区间的成员
+ ZREM key member: 移除一个或多个成员。
+ ZCARD key 获取有序集合的成员数。
